@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: 'Staatliches', cursive;
+  --ff-texting: 'Palanquin', sans-serif;
+
+  --bg-fundo: #d8d5d5;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FEEAFA;
+  
+  --fc-primary: #4A4E69;
+  --fc-secondary: #23053A;
+
+  font-size: 62.5%;
+  --fs-body: 2.0rem;
+}
+
+body {
+  background-color: var(--bg-fundo);
+  
+}
+
+.page {
+  max-width: 38rem;
+  margin: 0 auto;
+  background-color: var(--bg-primary);
+  
+}
+
+
+main {
+  display: grid;
+  gap: 3.6rem;
+  
+}
+
+p {
+  font-family: var(--ff-texting);
+  color: var(--fc-secondary);
+  font-size: var(--fs-body);
+  line-height: 1.5rem;
+  margin: 6.3rem;
+  
+  
+}
+
+h2 span {
+  font-family: var(--ff-heading);
+  background-color: var(--bg-secondary);
+  color: var(--fc-primary);
+  font-size: var(--fs-body);
+  line-height: 3.2rem;
+
+  letter-spacing: 0.05rem;
+  border-radius: 2.0rem;
+  bottom: 2.3rem;
+
+}
+
+p h2 {
+  font-weight: 400;
+  
+}
+
+header {
+  /*margin: 5rem;*/
+}
+
+header, p {
+  text-align: center;
+}
+
+
+.card {
+  object-fit: cover;
+  position: relative;
+  text-align: center;
+}
+
+.card  h2 , span  {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 1.6rem;
+  border-radius: 2rem;
+  padding: 0 2.4rem;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
